@@ -26,7 +26,8 @@ public class FTPServer {
 // пароль Если вы не установили пароль, вы являетесь анонимным пользователем
         user.setPassword("123456");
 // домашний каталог пользователя
-        user.setHomeDirectory("B:\\FTPServerPath");
+        //user.setHomeDirectory("B:\\FTPServerPath");
+        user.setHomeDirectory("\\\\192.168.0.30\\Accept\\Рахимов");
 
         List<Authority> authorities = new ArrayList<Authority>();
 // увеличить разрешение на запись
