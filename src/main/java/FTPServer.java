@@ -36,12 +36,12 @@ public class FTPServer {
 // Добавить пользователя
         serverFactory.getUserManager().save(user);
 
-        /**
-         Вы также можете использовать файлы конфигурации для управления пользователями
-         */
-//      PropertiesUserManagerFactory userManagerFactory = new PropertiesUserManagerFactory();
-//      userManagerFactory.setFile(new File("users.properties"));
-//      serverFactory.setUserManager(userManagerFactory.createUserManager());
+
+         /*Файлы конфигурации для управления пользователями
+
+      PropertiesUserManagerFactory userManagerFactory = new PropertiesUserManagerFactory();
+      userManagerFactory.setFile(new File("users.properties"));
+      serverFactory.setUserManager(userManagerFactory.createUserManager());*/
 
         FtpServer server = serverFactory.createServer();
         server.start();
